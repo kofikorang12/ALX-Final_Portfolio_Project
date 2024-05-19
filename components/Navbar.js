@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
-          <a className="navbar-item" href="../">
+          <Link className="navbar-item" href="../">
             <h1>content Manager</h1>
-          </a>
+          </Link>
           <span className="navbar-burger burger" data-target="navbarMenu">
             <span></span>
             <span></span>
@@ -26,12 +28,18 @@ function Navbar() {
                 </span>
               </div>
             </div>
-            <a className="navbar-item is-active is-size-5 has-text-weight-semibold">
+            <Link
+              href="/"
+              className="navbar-item is-active is-size-5 has-text-weight-semibold"
+            >
               Home
-            </a>
-            <a className="navbar-item is-size-5 has-text-weight-semibold">
-              Examples
-            </a>
+            </Link>
+            <Link
+              href="/resources/new"
+              className="navbar-item is-size-5 has-text-weight-semibold"
+            >
+              Add
+            </Link>
             <a className="navbar-item is-size-5 has-text-weight-semibold">
               Features
             </a>
