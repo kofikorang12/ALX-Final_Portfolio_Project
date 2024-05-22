@@ -1,5 +1,6 @@
 import Footer from "components/Footer";
 import Layout from "components/Layout";
+import Link from "next/link";
 
 const ResourceDetail = ({ resource }) => {
   //   const router = useRouter();
@@ -20,6 +21,12 @@ const ResourceDetail = ({ resource }) => {
                     <h2 className="subtitle is-4">{resource.createdAt}</h2>
                     <h1 className="title">{resource.title}</h1>
                     <p>{resource.description}</p>
+                    <Link
+                      href={`/resources/${resource.id}/edit`}
+                      className="button is-warning"
+                    >
+                      Update
+                    </Link>
                   </div>
                 </div>
               </div>

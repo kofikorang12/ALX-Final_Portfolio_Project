@@ -8,19 +8,24 @@ export default async function (req, res) {
     return res.send(data);
   }
 
-  if (req.method === "POST") {
+  // Handling the post and patch request
+  if (req.method === "POST" || req.method === "PATCH") {
     console.log(req.body);
-    const { title, description, link, timeToFinish, priority } = req.body;
+    //Destructuring the content of the body
+    const { id, title, description, link, timeToFinish, priority } = req.body;
 
     if (!title || !description || !link || !timeToFinish || !priority) {
       return res.status(422).send("Data are missing");
     }
 
+    //Dunamically making our request method with "POST" || 'PATCH' and directing the different url end point
+    const url =
+      req.method === "POST"
+        ? "http://localhost:3001/api/resources"
+        : `http://localhost:3001/api/resources/${id}`;
+
     try {
-      const axiosRes = await axios.post(
-        "http://localhost:3001/api/resources",
-        req.body
-      );
+      const axiosRes = await axios[req.method.toLowerCase()](url, req.body);
 
       return res.send(axiosRes.data);
     } catch {
