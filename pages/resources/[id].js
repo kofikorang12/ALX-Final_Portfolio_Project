@@ -1,7 +1,13 @@
+import Footer from "components/Footer";
 import Layout from "components/Layout";
-import resources from "pages/api/resources";
 
 const ResourceDetail = ({ resource }) => {
+  //   const router = useRouter();
+
+  //   if (router.isFallback) {
+  //     return <div>Loading Data!</div>;
+  //   }
+
   return (
     <Layout>
       <section className="hero ">
@@ -21,9 +27,24 @@ const ResourceDetail = ({ resource }) => {
           </div>
         </div>
       </section>
+      <Footer />
     </Layout>
   );
 };
+
+// export async function getStaticPaths() {
+//   const resData = await fetch("http://localhost:3001/api/resources");
+//   const data = await resData.json();
+//   const paths = data.map((resource) => {
+//     return {
+//       params: { id: resource.id },
+//     };
+//   });
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// }
 
 export async function getServerSideProps({ params }) {
   const dataRes = await fetch(

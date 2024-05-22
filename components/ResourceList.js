@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function ResourceList({ resources }) {
   return (
     <section className="hero ">
@@ -16,6 +18,12 @@ function ResourceList({ resources }) {
                         {resource.title}
                       </h1>
                       <p className="has-text-dark">{resource.description}</p>
+                      <Link
+                        className="button is-link"
+                        href={`/resources/${resource.id}`}
+                      >
+                        Read More
+                      </Link>
                     </div>
                   </div>
                 );

@@ -3,6 +3,7 @@ import Newsletter from "components/Newsletter";
 import ResourceHighlight from "components/ResourceHighlight";
 import ResourceList from "components/ResourceList";
 import Footer from "components/Footer";
+import resources from "./api/resources";
 
 function Home({ resources }) {
   return (
