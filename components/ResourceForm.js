@@ -25,7 +25,7 @@ const ResourceForm = ({ onFormSubmit, initialProps }) => {
 
   return (
     <div className="resource-form">
-      <h1 className="title">Add New Resource</h1>
+      <h1 className="title">Add New Job listing</h1>
       <form>
         <div className="field">
           <label className="label">Title</label>
@@ -36,7 +36,7 @@ const ResourceForm = ({ onFormSubmit, initialProps }) => {
               className="input"
               name="title"
               type="text"
-              placeholder="Learning React and Nextjs framework"
+              placeholder="Add your the job"
             />
           </div>
         </div>
@@ -49,7 +49,7 @@ const ResourceForm = ({ onFormSubmit, initialProps }) => {
               value={form.description}
               name="description"
               className="textarea"
-              placeholder="Learn these technologies because they are very popuplar and enable better SEO"
+              placeholder="Give the details of the job above including location"
             ></textarea>
           </div>
         </div>
@@ -63,7 +63,7 @@ const ResourceForm = ({ onFormSubmit, initialProps }) => {
               name="link"
               className="input"
               type="text"
-              placeholder="http://jeffreybaah.com"
+              placeholder="Write the email of the job"
             />
           </div>
         </div>
@@ -86,7 +86,7 @@ const ResourceForm = ({ onFormSubmit, initialProps }) => {
         </div>
 
         <div className="field">
-          <label className="label">Time to finish</label>
+          <label className="label">Time to Publish</label>
           <div className="control">
             <input
               onChange={handleChange}

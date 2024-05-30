@@ -1,13 +1,18 @@
 import Footer from "components/Footer";
 import Layout from "components/Layout";
 import Link from "next/link";
+import axios from "axios";
 
 const ResourceDetail = ({ resource }) => {
-  //   const router = useRouter();
-
-  //   if (router.isFallback) {
-  //     return <div>Loading Data!</div>;
-  //   }
+  const activeResource = () => {
+    // making patch request
+    axios
+      .patch("/api/resources", { ...resource, status: "active" })
+      // consumimg the promise
+      .then((_) => alert("Resources has been published👍"))
+      //Catching error possible
+      .catch((_) => alert("Cannot publish the resource"));
+  };
 
   return (
     <Layout>
@@ -21,12 +26,19 @@ const ResourceDetail = ({ resource }) => {
                     <h2 className="subtitle is-4">{resource.createdAt}</h2>
                     <h1 className="title">{resource.title}</h1>
                     <p>{resource.description}</p>
+                    <p>Time to finish: {resource.timeToFinish} min</p>
                     <Link
                       href={`/resources/${resource.id}/edit`}
                       className="button is-warning"
                     >
                       Update
                     </Link>
+                    <button
+                      onClick={activeResource}
+                      className="button is-success ml-1"
+                    >
+                      Publish
+                    </button>
                   </div>
                 </div>
               </div>
@@ -50,6 +62,20 @@ const ResourceDetail = ({ resource }) => {
 //   return {
 //     paths,
 //     fallback: false,
+//   };
+// }
+
+// export async function getServerSideProps({ params }) {
+//   const dataRes = await fetch(
+//     `http://localhost:3001/api/resources/${params.id}`
+//   );
+//   const data = await dataRes.json();
+//   // const data = await resData.json();
+
+//   return {
+//     props: {
+//       resource: data,
+//     },
 //   };
 // }
 
