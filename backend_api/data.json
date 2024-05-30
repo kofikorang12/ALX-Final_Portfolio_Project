@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Backend developer needed",
+    "description": "node js",
+    "link": "jobfinder.com",
+    "priority": "2",
+    "timeToFinish": "1",
+    "createdAt": "5/29/2024, 12:19:23 PM",
+    "status": "inactive",
+    "id": "1716985163269"
+  },
+  {
+    "title": "Data Engineer Needed",
+    "description": "requirement\nmust hold certficate in any related field\nmust knowledgeable in data science and analytics",
+    "link": "jobfinder.com",
+    "priority": "2",
+    "timeToFinish": "1",
+    "createdAt": "5/29/2024, 12:16:11 PM",
+    "status": "inactive",
+    "id": "1716984971282"
+  },
+  {
+    "title": "A Remote Job is openned",
+    "description": "Individual must be skilled in Reactjs and Nextjs",
+    "link": "jobfinder.com",
+    "priority": "2",
+    "timeToFinish": "1",
+    "createdAt": "5/29/2024, 12:10:11 PM",
+    "status": "inactive",
+    "id": "1716984611501"
+  },
+  {
+    "title": "A Backend Developer is needed for a senior role ",
+    "description": "The job offer comes with insurance and is located at Lapaz. Individual must be skilled in Node, flask. It also come with monthly data allowance ",
+    "link": "jobfinder.com",
+    "priority": "2",
+    "timeToFinish": "1",
+    "createdAt": "5/29/2024, 11:51:08 AM",
+    "status": "inactive",
+    "id": "1716983468621"
+  },
+  {
+    "title": "A frontend Developer for an opening at a startup",
+    "description": "Must be skilled in React, HTML, CSS",
+    "link": "baah.com",
+    "priority": "2",
+    "timeToFinish": "1",
+    "createdAt": "5/29/2024, 11:46:56 AM",
+    "status": "inactive",
+    "id": "1716983216166"
+  },
+  {
+    "title": "A factory Hand needed",
+    "description": "The company is located at Nungua Last stop. ",
+    "link": "google.com",
+    "priority": "2",
+    "timeToFinish": "1",
+    "createdAt": "5/29/2024, 11:33:02 AM",
+    "status": "inactive",
+    "id": "1716982383478"
+  },
+  {
+    "title": "A Hotel Receptionist",
+    "description": "A Company located at Spintex Road is requesting graduates with sales and marketing backgrounds to be employed as sales and marketing executives",
+    "link": "https://forms.gle/dDF41KN2M12",
+    "priority": "1",
+    "timeToFinish": 60,
+    "createdAt": "5/23/2024, 9:02:25 PM",
+    "status": "inactive",
+    "id": "1716498146680"
+  },
+  {
+    "title": "Tullow Oil Ghana",
+    "description": "Tullow Oil Ghana is requesting students to undertake an intership with them during the second semester vacation period",
+    "link": "GhanaHR@tullowooil.com",
+    "priority": "2",
+    "timeToFinish": 60,
+    "status": "inactive",
+    "id": "1716425854825"
+  },
+  {
+    "title": "Executive Assistant at Cowtribe",
+    "description": "Cowtribe needs an Executive assistant job located at Spintex Office.",
+    "link": "founders@cowtribe.com",
+    "priority": "1",
+    "timeToFinish": "75",
+    "createdAt": "2024-05-22:46:30.22",
+    "status": "active",
+    "id": "1716396390221",
+    "activationTime": "2024-05-22:13:25.23"
+  },
+  {
+    "title": "Learning React and nextjs library and framework respectively cpoy",
+    "description": "Nextjs is built on top of reactjs COPY",
+    "link": "https://google.com COPY",
+    "priority": "2",
+    "timeToFinish": "40",
+    "createdAt": "2024-05-21T13:27:19.266Z",
+    "status": "inactive",
+    "id": "NEW-re"
+  },
+  {
+    "title": "fallback falls ",
+    "description": "fallback falls",
+    "link": "https://google.com fallback falls",
+    "priority": "2",
+    "timeToFinish": "40",
+    "createdAt": "2024-05-21T13:27:19.266Z",
+    "status": "inactive",
+    "id": "NEW"
+  }
+]
